@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+
+<script type="module" src="./fast-button.js"></script>
+<fast-button id=btn>test</fast-button>
+
+<script type="module">
+onload = () => {
+  btn.ondown = () => {
+    console.log("down");
+    btn.textContent = "down!";
+  };
+  btn.onup = () => {
+    console.log("up");
+    btn.textContent = "test";
+  };
+};
+</script>
