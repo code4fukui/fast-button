@@ -34,3 +34,5 @@ class FastButton extends HTMLElement {
 };
 
 customElements.define("fast-button", FastButton);
+
+export { FastButton };
