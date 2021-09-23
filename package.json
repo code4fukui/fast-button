@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "-": "^0.0.1"
+  },
+  "name": "fast-button",
+  "description": "https://code4fukui.github.io/fast-button/",
+  "version": "1.0.0",
+  "main": "fast-button.js",
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code4fukui/fast-button.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code4fukui/fast-button/issues"
+  },
+  "homepage": "https://github.com/code4fukui/fast-button#readme"
+}
