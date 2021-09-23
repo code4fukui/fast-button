@@ -3,16 +3,16 @@
 <script src="./lib/webcomponents-loader.js"></script>
 </body>
 </html>
-<script src="./bundle-es5.js"></script>
+<script src="./fast-button-es5.js" xsrc="./bundle-es5.js"></script>
 <fast-button id=btn>test</fast-button>
 
 <script>
-onload = () => {
-  btn.ondown = () => {
+onload = function () {
+  btn.ondown = function () {
     console.log("down");
     btn.textContent = "down!";
   };
-  btn.onup = () => {
+  btn.onup = function () {
     console.log("up");
     btn.textContent = "test";
   };
