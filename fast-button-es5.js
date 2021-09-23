@@ -8,23 +8,24 @@ const FastButton = function () {
         var content = thisDoc.importNode(template.content, true);
         root.appendChild(content);
         */
+        const _this = this;
         if (this.ontouchstart) {
-          this.onaddEventListener("touchstart", (e) => {
+          this.onaddEventListener("touchstart", function (e) {
             e.preventDefault();
-            this._fireDown();
+            _this._fireDown();
           });
-          this.addEventListener("touchstop", (e) => {
+          this.addEventListener("touchstop", function (e) {
             e.preventDefault();
-            this._fireUp();
+            _this._fireUp();
           });
         } else {
-          this.addEventListener("mousedown", (e) => {
+          this.addEventListener("mousedown", function (e) {
             e.preventDefault();
-            this._fireDown();
+            _this._fireDown();
           });
-          this.addEventListener("mouseup", (e) => {
+          this.addEventListener("mouseup", function (e) {
             e.preventDefault();
-            this._fireUp();
+            _this._fireUp();
           });
         }
       }
