@@ -1,34 +1,32 @@
 # fast-button
 
-1〜2文で説明。
+高速で反応的なWeb Componentボタンです。タッチイベントとマウスイベントを拾い、`down`と`up`イベントを発火させます。
 
 ## デモ
 https://code4fukui.github.io/fast-button/
 
 ## 機能
-- タッチやマウスダウンで即座にイベントが発火する高速なボタン
-- `ondown`と`onup`イベントを登録できる
+- タッチとマウスのイベントに対応
+- `down`と`up`イベントを発火させる
+- 軽量で高パフォーマンス
 
 ## 必要環境
-特に必要条件はありません。
+この Web Component は最新のWeb技術を使用しており、Web Components をサポートするブラウザが必要です。
 
 ## 使い方
-```html
-<script type="module" src="./fast-button.js"></script>
-<fast-button id=btn>test</fast-button>
+`fast-button` コンポーネントを使用するには、HTMLにスクリプトを含めます:
 
-<script type="module">
-onload = () => {
-  btn.ondown = () => {
-    console.log("down");
-    btn.textContent = "down!";
-  };
-  btn.onup = () => {
-    console.log("up");
-    btn.textContent = "test";
-  };
-};
-</script>
+```html
+<script type="module" src="https://code4fukui.github.io/fast-button/fast-button.js"></script>
+<fast-button>Click me</fast-button>
+```
+
+そして、`down`と`up`イベントを受け取ることができます:
+
+```javascript
+const button = document.querySelector('fast-button');
+button.addEventListener('down', () => console.log('Button pressed down'));
+button.addEventListener('up', () => console.log('Button released'));
 ```
 
 ## ライセンス
