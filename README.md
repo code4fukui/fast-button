@@ -32,4 +32,4 @@ button.addEventListener('up', () => console.log('Button released'));
 ```
 
 ## License
-MIT
+MIT License — see [LICENSE](LICENSE).
